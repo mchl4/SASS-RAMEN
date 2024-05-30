@@ -1,0 +1,12 @@
+@use '../abstract' as*;
+
+.tns-controls{
+    @include flex(space-between,center);
+    margin: 2rem 0;
+}
+button{
+    background: transparent;
+    border: none;
+    font-style: 3rem;
+    color: $clr-dark;
+}

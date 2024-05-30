@@ -1,0 +1,47 @@
+@use '../abstract/' as*;
+
+.block__header{
+    @include mediaQuery{
+        display: flex;
+        justify-content: center;
+    }
+    @include flex (center, center);
+    flex-direction: column;
+    h2{
+        @include mediaQuery{
+            font-size: 2rem;
+            
+        }
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $clr-primary;
+        font-size: 3rem;
+    }
+    ul{
+        @include mediaQuery{
+            gap: .2rem;
+        }
+        
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        i{
+            
+            @include mediaQuery{
+                font-size: .2rem;
+            }
+            font-size: .5rem;
+            align-self: center;
+            
+        }
+        a{
+            @include mediaQuery{
+                font-size: .8rem;
+            }
+            color: $clr-accent;
+        }
+        
+    }
+    
+    
+}

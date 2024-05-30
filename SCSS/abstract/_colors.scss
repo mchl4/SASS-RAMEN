@@ -1,0 +1,19 @@
+:root{
+    --neutral : #fff;
+    --accent: #f6ad49;
+    --primary:#e60033;
+    --dark: #433d3c;
+
+
+}
+
+$clr-neutral: var(--neutral);
+$clr-dark: var(--dark);
+$clr-accent: var(--accent);
+$clr-primary: var(--primary);
+
+
+$sm: "42rem";
+$md: "92rem";
+$lg: "144rem";
+$xl: "180rem";

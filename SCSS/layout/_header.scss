@@ -1,0 +1,66 @@
+@use "../abstract/" as*;
+
+.header{
+    @include mediaQuery{
+        margin-bottom: 2rem;
+    }
+
+
+    padding: 2rem;
+    
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        align-items: center;
+        gap: 3rem;
+    }
+    ul{
+        @include mediaQuery{
+                display: none;
+        }
+
+        @include flex(space-between,center);
+        li{
+           
+            font-family: "Montserrat-medium";
+            text-transform: uppercase;
+        }
+        
+    }
+    img{
+        @include mediaQuery{
+            width: 70%;
+    }
+        width: 30%;
+    }
+    button{
+        @include mediaQuery{
+            position: absolute;
+            transform: translateY(260px);
+            width: 40%;
+    }
+                @include flex(flex-end, end);
+                text-align: center;
+                text-transform: uppercase;
+                padding: 1rem 1rem;
+                color: $clr-neutral;
+                background-color: $clr-accent;
+                border: 0px solid $clr-accent;
+                border-radius: .3rem;
+                h4{
+                    @include mediaQuery{
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                    margin-bottom: 0;
+                }
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+        @include mediaQuery{
+            // transform: translateX(1px);
+            justify-content: center;
+        }
+    }
+}
